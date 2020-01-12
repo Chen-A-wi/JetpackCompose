@@ -33,6 +33,7 @@ fun NewStory() {
         modifier = Spacing(16.dp)
     ) {
         Container(modifier = Height(180.dp) wraps Expanded) {
+            // https://stackoverflow.com/questions/58764407/imageresource-from-r-drawable-causes-illegalargumentexception-in-jetpack-compos
             DrawImage(image)
         }
 
