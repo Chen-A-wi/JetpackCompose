@@ -13,8 +13,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            Text("Hello world")
+            Greeting(name = "Android")
         }
 
     }
+}
+
+@Composable
+fun Greeting(name: String) {
+    Text(text = "Hello $name")
 }
