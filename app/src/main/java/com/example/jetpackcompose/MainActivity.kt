@@ -13,7 +13,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            Greeting(name = "Android")
+            MaterialTheme {
+                Greeting(name = "Android")
+            }
         }
 
     }
