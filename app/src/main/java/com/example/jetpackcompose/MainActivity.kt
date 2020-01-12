@@ -13,23 +13,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            MaterialTheme {
-                Greeting("Android")
-            }
+            Text("Hello world")
         }
-        
-    }
-}
 
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview
-@Composable
-fun DefaultPreview() {
-    MaterialTheme {
-        Greeting("Android")
     }
 }
