@@ -7,6 +7,7 @@ import androidx.ui.core.Text
 import androidx.ui.core.setContent
 import androidx.ui.material.MaterialTheme
 import androidx.ui.tooling.preview.Preview
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
         setContent {
             MaterialTheme {
-                Greeting(name = "Android")
+                NewStory()
             }
         }
 
@@ -22,12 +23,13 @@ class MainActivity : AppCompatActivity() {
 }
 
 @Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name")
+fun NewStory() {
+    Text(text = "A long time ago and far away there lived a King and a Queen.")
+    Text(text = "They were very happy, for their first child, a girl, had been born.")
 }
 
 @Preview
 @Composable
-fun PreviewGreeting() {
-    Greeting(name = "Android")
+fun DefaultPreview() {
+    NewStory()
 }
